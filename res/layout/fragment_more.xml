@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" 
+        android:background="#be3131"
+        >
+
+        <LinearLayout
+            android:id="@+id/fragment_more_lin"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal" 
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/fragment_more_tv"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="北京" 
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                />
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/xiangxia_baise" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/act_login_et"
+            android:padding="7dp" 
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/fragment_more_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:hint="请输入检索的内容"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/fragment_more_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/id_search" />
+        </RelativeLayout>
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_margin="10dp"
+	    android:background="#ffffff"
+	    >
+	    <Button 
+	        android:id="@+id/more_but1"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="免费"
+	        android:textSize="18dp"
+	        android:background="@drawable/more_but"
+	        android:padding="5dp"
+	        android:textColor="#ffffff"
+	        />
+	    <Button 
+	        android:id="@+id/more_but2"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="热门"
+	        android:textSize="18dp"
+	        android:background="@drawable/more_but"
+	        android:padding="5dp"
+	        />
+	    <Button 
+	        android:id="@+id/more_but3"
+	        android:textColor="#ffffff"
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="附近"
+	        android:textSize="18dp"
+	        android:background="@drawable/more_but"
+	        android:padding="5dp"
+	        />
+	</LinearLayout>
+    
+    <GridView 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/more_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"
+        android:numColumns="5"
+        android:scrollbars="none"
+        ></GridView>
+    
+    <ImageView 
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/touxiang"
+        android:scaleType="fitXY"
+        />
+</LinearLayout>

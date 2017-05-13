@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#be3131"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="个人中心"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+        
+        
+      <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="10dp"
+          android:gravity="center"
+          android:background="#ffffff"
+          >
+          <com.example.jiuquwan.view.MyImageView 
+              android:layout_marginTop="10dp"
+              android:id="@+id/fragment_mycenter_head"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:src="@drawable/logo1"
+              />
+          <TextView 
+              android:singleLine="true"
+              android:id="@+id/fragment_mycenter_nickname"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:text="我是小公举"
+              android:textColor="#000000"
+              android:gravity="center"
+              />
+          <TextView 
+              android:singleLine="true"
+              android:id="@+id/fragment_mycenter_uname"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:text="就去玩:15312345678"
+              android:textSize="12sp"
+              android:textColor="#acacac"
+              android:gravity="center"
+              />
+          <GridView 
+              android:layout_marginTop="20dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:horizontalSpacing="15dp"
+              android:verticalSpacing="8dp"
+              android:numColumns="2"
+              android:background="#acacac"
+              android:id="@+id/fragment_mycenter_grid"
+              
+              ></GridView>
+          
+      </LinearLayout>  
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/act_send_et_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/popup_map_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/act_login_et"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="这里是标题"
+        android:singleLine="true"
+         />
+
+    <TextView
+        android:id="@+id/popup_map_context"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/act_login_et"
+        android:gravity="center"
+        android:minLines="3"
+        android:text="这里是内容" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+        	android:id="@+id/popup_map_but1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/more_but"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/popup_map_but2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/act_login_et"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	    android:background="#be3131"
+	    android:padding="10dp"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    >
+	     <TextView 
+	        android:layout_width="14sp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:gravity="center"
+	        android:textColor="#fff"
+	        />
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:text="我的好友"
+	        android:gravity="center"
+	        android:textColor="#fff"
+	        android:textSize="18sp"
+	        android:layout_weight="4"
+	        />
+	    
+	    <ImageView 
+	        android:id="@+id/message_tianjia"
+	        android:layout_width="18sp"
+	        android:layout_height="18sp"
+	        android:src="@drawable/tianjia"
+	        android:layout_weight="1"
+	        />
+    </LinearLayout>
+    
+    <ListView 
+	    android:scrollbars="none"
+        android:id="@+id/fragment_message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</LinearLayout>

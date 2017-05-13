@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="libs/Bmob_Push_V1.0.0beta_20160627.jar"/>
+	<classpathentry kind="lib" path="libs/BmobPay_v3.0.3_160621.jar"/>
+	<classpathentry kind="lib" path="libs/BmobSDK_3.5.1_20160719.jar"/>
+	<classpathentry kind="lib" path="libs/BmobSMS_V1.0.1_20150710.jar"/>
+	<classpathentry kind="lib" path="libs/gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="libs/okhttp-3.3.1.jar"/>
+	<classpathentry kind="lib" path="libs/okio-1.7.0.jar"/>
+	<classpathentry kind="lib" path="libs/rxandroid-1.2.0.jar"/>
+	<classpathentry kind="lib" path="libs/rxjava-1.1.6.jar"/>
+	<classpathentry kind="lib" path="libs/universal-image-loader-1.9.2.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_base_v3_7_3.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_cloud_v3_7_3.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_map_v3_7_3.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_radar_v3_7_3.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_search_v3_7_3.jar"/>
+	<classpathentry kind="lib" path="libs/baidumapapi_util_v3_7_3.jar"/>
+	<classpathentry kind="lib" path="libs/locSDK_6.13.jar"/>
+	<classpathentry kind="lib" path="libs/androidasync-2.1.6.jar"/>
+	<classpathentry kind="lib" path="libs/BmobNewIM_2.0.5_20160601.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

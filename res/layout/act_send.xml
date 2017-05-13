@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 上边的返回个发布按钮 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#be3131"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:onClick="img_back"
+            android:id="@+id/fragment_home_title_so"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/back2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布活动"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:onClick="sendonClick"
+            android:id="@+id/fragment_home_title_menu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+    <!-- 下边输入的内容 -->
+
+    <ScrollView
+        android:id="@+id/act_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/zong"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:onClick="act_send_onClick"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/act_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/act_send_et_shape"
+                android:hint="请输入活动名称"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:id="@+id/act_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/act_send_et_shape"
+                android:gravity="center"
+                android:onClick="act_send_onClick"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/type_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="请选择活动类型"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/type_img2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/type_img"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/xiangzuo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/act_context"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/act_send_et_shape"
+                    android:hint="请输入活动详情"
+                    android:padding="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/act_addimgs1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/act_addimgs2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 选择时间 -->
+
+            <LinearLayout
+                android:id="@+id/act_send_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/act_send_et_shape"
+                android:gravity="center_vertical"
+                android:onClick="act_send_onClick"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/shijian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:hint="选择时间"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/act_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|right"
+                    android:text="点击获取时间"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+            <!-- 选择地点 -->
+
+            <LinearLayout
+                android:id="@+id/act_send_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/act_send_et_shape"
+                android:gravity="center_vertical"
+                android:onClick="act_send_onClick"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/didian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:hint="选择地点"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/act_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|right"
+                    android:text="点击选择地址"
+                    android:singleLine="true"
+                    android:textColor="#acacac" />
+            </LinearLayout>
+            <!-- 活动金额 -->
+
+            <LinearLayout
+                android:id="@+id/act_send_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/act_send_et_shape"
+                android:gravity="center_vertical"
+                android:onClick="act_send_onClick"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/jine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:hint="活动金额"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/renminbi" />
+
+                    <EditText
+                        android:id="@+id/act_rmb"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:hint="金额"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#ff00ff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="元"
+                        android:textColor="#acacac" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
